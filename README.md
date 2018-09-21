@@ -1,6 +1,6 @@
-# Worldwide Back-End Manager
+# Nokengo.com@CMS
 
-![Author](http://www.3aworldwide.com.br/assets/images/logo-3a-topo.png)
+![Author](http://nokengo.com/img/_site/macaco.png)
 
 
 ## Installation
