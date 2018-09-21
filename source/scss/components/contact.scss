@@ -1,0 +1,25 @@
+.contact{
+	background: $color1;
+}
+#contato{
+	padding-top: 40px;
+	height: calc(100vh - 72px);
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 640px;
+	}
+	li {
+		width: 249px;
+		margin-bottom: 40px;
+	}
+	p {
+		font-size: 16px;
+		color: $color4;
+		margin-bottom: 10px;
+	}
+	span {
+		font-size: 14px;
+		color: white;
+	}
+}

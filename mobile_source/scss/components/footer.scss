@@ -1,0 +1,89 @@
+#footer{
+    border-top: 1px solid $white;
+    @media screen and (max-width: $break-small) {
+        background: $colorMob5;
+    }
+    @media screen and (min-width: $break-large) {
+        padding: 40px 0;
+    }
+    .viewMob {
+        padding-top: 40px;
+        ul {
+            display: block;
+            width: 100%;
+            text-align: center;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                a {
+                    padding: 0 20px;
+                    color: $colorMob6;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .view_parts {
+            display: block;
+            background: $colorMob6;
+            width: 100%;
+            margin: 40px 0;
+            text-align: center;
+            color: $white;
+            padding: 15px 0;
+            font-family: $font1;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        p {
+            font-family: $font1;
+            color: #5F656A;
+            text-align: center;
+            font-size: 3.6vw;
+            padding-bottom: 40px;
+        }
+    }
+    .wrapper{
+        width: 60%;
+        margin: 0 auto;
+        @media screen and (max-width: $break-small) {
+            width: 100%; 
+            padding: 0 40px; 
+        }
+        @media screen and (min-width: $break-large) {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo_footer{
+            img {
+                display: inline-block;
+            }
+            p {
+                display: inline-block;
+                height: 45px;
+                vertical-align: bottom;
+                border-left: 1px solid #282828;
+                padding-top: 14px;
+                padding-left: 20px;
+                margin-left: 20px;
+                color: #282828;
+                margin-bottom: 4px;
+            }
+        }
+        .sendParts {
+            padding: 63px 0px 0;
+            a {
+                display: block;
+                background: #000;
+                color: #fff;
+                padding: 13px 49px;
+                transition: .5s ease;
+                &:hover {
+                    background:#bfa05e;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.webdoor {
+	position: relative;
+	.webdoor_front {
+		width: 100%;
+		background: url(../images/bbaner_mobile.png) no-repeat center;
+		background-size: 100%;
+		position: absolute;
+		min-height: 495px;
+		z-index: 9;
+		max-height: 495px;
+	}
+	.webdoor_pager {
+		min-height: 495px;
+		max-height: 495px;
+		img{
+			object-fit: cover;
+			object-position: center;
+			min-height: 495px;
+		}
+	}
+	.iconArrowHome{
+		position: absolute;
+		bottom: 15px;
+		z-index: 10;
+		left: 50%;
+		transform: translateX(-50%);
+		img{
+			height: 40px;
+		}
+	}
+	.item {
+		img {
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.wrapper {
+		position: relative;
+		overflow: hidden;
+		padding: 0 80px;		
+	}
+	.brand_layer {
+		position: absolute;
+		width: 100%;
+		overflow: hidden;
+		height: 100vh;
+		top: -60px;
+		img {
+			background: $color1;
+			transition: all 0.5s;
+			display: block;
+			// width: 20%;
+			width: 10%;
+			height: 104px;
+			@include break-max(1440px) {
+				width: inherit;
+			}
+			&.active {
+				background: transparent;
+				opacity: 1;
+			}
+		}
+		.row {
+			display: flex;
+		}
+	}
+	.webdoor_footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $color1;
+		width: 100%;
+		padding-right: 80px;
+		height: 75px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.arrow {
+			display: block;
+			position: absolute;
+			left: 50%;
+			margin-left: -20px;
+			top: 50%;
+			margin-top: -20px;
+			height: 40px;
+			width: 40px;
+			border: 1px solid #a9a9a9;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			img {
+				animation: arrowMov 0.7s infinite;
+			}
+			&:hover {
+				img {
+					transform: translateY(0%) !important;
+				}
+			}
+		}
+		.image_description {
+			font-weight: 100;
+			color: white;
+			margin-left: auto;
+			font-size: 20px;
+			&:before {
+				content: 'Destaque // ';
+				font-size: 20px;
+				font-weight: bold;
+				color: #bfa05e;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+@keyframes arrowMov {
+	from {
+		transform: translateY(-100%);
+	}
+	
+	to {
+		transform: translateY(150%);
+	}
+}

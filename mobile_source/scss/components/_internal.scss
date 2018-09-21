@@ -1,0 +1,277 @@
+.clube {
+		.contentClube {
+			background: $colorMob5;
+			width: 100%;
+			padding-bottom: 70px;
+
+			img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-family: $font1;
+				color: $white; 
+				font-size: 16px;
+				padding: 15px 0;
+				line-height: 24px;
+			}
+		}
+		.contentBoard {
+			padding-top: 50px;
+			font-family: $font1;
+			font-size: 16px;
+			ul {
+				li {
+					display: inline-block;
+					vertical-align: top;
+					width: 49%;
+					p {
+						color: $colorMob6;
+						padding-bottom: 5px;
+					}
+
+					span {
+						display: block;
+						margin-bottom: 20px;
+						color: $black;
+					}
+				}
+			}
+
+			p {
+				padding-bottom: 5px;
+			}
+
+			a {
+				display: block;
+				width: 182px;
+				text-align: center;
+				padding: 10px 0;
+				font-family: $font1;
+				font-size: 14px;
+				font-weight: bold;
+				background: $colorMob6;
+				color: $white;
+				text-transform: uppercase;
+				margin-bottom: 30px;
+				i {
+					padding-right: 5px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+.opniao {
+		.opinionTop {
+			background: $colorMob5;
+			margin-bottom: 40px;
+			&__image {
+				width: 100%;
+				height: 400px;
+				background: url(../images/home_opiniao.png) no-repeat center center;				
+			}
+			&__text {
+				padding-bottom: 50px;
+				h2 {
+					padding-bottom: 7px;
+				}
+				h3 {
+					color: #838B95;
+					font-family: $font1;
+					text-transform: uppercase;
+					padding-bottom: 20px;
+					font-weight: normal;
+					font-size: 14px;
+				}
+
+				p {
+					font-family: $font1;
+					font-size: 16px;
+					color: #b9b9b9;
+					font-weight: normal;
+					line-height: 24px;
+					padding-bottom: 25px;
+					&.quote{
+						color: #BA8425;
+					}
+				}
+			}
+		}
+		.moreOpinion {
+			&__box {
+				img {
+					width: 100%;
+					height: auto;
+				}
+				h2 {
+					font-family: $font1;
+					color: $colorMob6;
+					font-size: 30px;
+					text-transform: uppercase;
+					padding-top: 15px;
+					padding-bottom: 5px;
+				}
+
+				p {
+					font-family: $font1;
+					color: #838B95;
+					font-size: 16px;
+					padding-bottom: 10px;
+					line-height: 25px;
+				}
+
+				a {
+					width: 100%;
+					font-family: $font1;
+					font-weight: bold;
+					text-transform: uppercase;
+					padding: 0px 0 30px;
+					display: block;
+					text-align: center;
+					span {
+						color: $colorMob6;
+					}
+				}
+			}
+		}
+	}
+.sendPeca {
+		background: $white;
+		#header.interna {
+			background: $white;
+		}	
+		#envie {
+			@media screen and (max-width: $break-small) {
+				display: none;
+			}
+		}
+		.contentMob {
+			padding: 0 40px;
+			h2 {
+				padding-bottom: 0;
+			}
+			h3 {
+				font-family: $font1;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: $colorMob6;
+				padding: 20px 0 10px;
+			}
+			input, select {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #B5D1D8;
+				border-radius: 3px;
+				margin-bottom: 10px;
+				color: #5F656A;
+			}
+
+			input[type="submit"] {
+				background: $colorMob6;
+				color: $white;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 14px;
+				border: none;
+				border-radius: 3px;
+				margin-top: 20px;
+				padding: 15px 0;
+				margin-bottom: 40px;
+			}
+
+			.decription {
+				margin-bottom: 30px;
+				font-family: $font1;
+				color: #5F656A;
+				line-height: 20px;
+				font-size: 14px;
+				textarea{
+					color: #5F656A;
+					overflow: auto;
+					border: 1px solid #B5D1D8;
+					width: 100%;
+					padding: 15px;
+					border-radius: 3px;
+
+				}
+			}
+
+			.boxAnexo {
+				.anexo {
+					background: $colorMob2;
+					text-align: center;
+					input {
+						display: none;
+					}
+					i {
+						display: block;
+						font-size: 40px;
+						color: $colorMob6;
+						padding: 15px 0;
+					}
+					span {
+						display: block;
+						font-size: 16px;
+						color: $colorMob5;
+						padding-bottom: 20px;
+					}
+				}
+				.link {
+					width: 100%;
+					&__box {
+						background: $colorMob2;
+						padding: 10px 10px 2px;
+						position: relative;
+						input {
+							padding-left: 50px;
+						}
+						i {
+						    position: absolute;
+						    left: 29px;
+						    top: 21px;
+						    color: $colorMob6;
+						}
+					}
+				}
+				p {
+					background: $white;
+					width: 100%;
+					color: #5F656A;
+					font-family: $font1;
+					font-size: 11px;
+					padding-top: 10px;
+					text-align: center;
+					span {
+						display: block;
+						font-size: 16px;
+						padding-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+
+.contact {
+		background: $white;
+		#header.interna {
+			background: $white;
+		}
+		.viewMob {
+			padding: 0 40px;
+			h3 {
+				font-family: $font1;
+				color: $colorMob6;
+				font-size: 16px;
+				font-weight: normal;
+			}
+			p {
+				font-size: 16px;
+				font-family: $font1;
+				color: $colorMob5;
+				padding-bottom: 25px;
+			}
+		}
+	}

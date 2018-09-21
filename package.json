@@ -1,0 +1,38 @@
+{
+  "name": "nokengo-manager",
+  "version": "1.0.0",
+  "description": "![Author](http://www.nokengo.com/logo.png)",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp-manager": "cd plugins/Gerenciador && gulp build",
+    "build": "gulp build && gulp mbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:samuellevy/nokengo-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/samuellevy/nokengo-manager.git",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-inject": "^4.3.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

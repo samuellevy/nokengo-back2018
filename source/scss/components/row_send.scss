@@ -1,0 +1,23 @@
+.row_send {
+    margin: 35px 0;
+    .wrapper {
+        background: #BA8425;
+        display: flex;
+        align-items: center;
+        padding: 25px 5%;
+        justify-content: space-between;
+        p {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        a {
+            background: #fff;
+            color: $color4;
+            padding: 15px 100px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+    }
+}

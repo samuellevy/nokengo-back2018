@@ -1,0 +1,56 @@
+.post_list {
+    margin-top: 50px;
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .description {
+        color: #fbfbfb;
+        background: $color1;
+        position: absolute;
+        bottom: 0;
+        padding: 15px;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .text{
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;   
+        position: relative;    
+        display: block;
+    }
+    .item {
+        width: 49%;
+        margin-bottom: 2%;
+        position: relative;
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            min-height: 480px;
+            transition: all 0.2s ease-in;
+            filter: grayscale(100%);
+            @include break-max(1200px) {
+                min-height: 300px;
+            }
+        }
+        &.big {
+            width: 100%;
+            .text {
+                max-width: 500px;
+                margin-left: auto;
+            }
+            
+        }
+    }
+}

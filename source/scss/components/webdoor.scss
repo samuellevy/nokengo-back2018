@@ -1,0 +1,160 @@
+.webdoor {
+	height: 100vh;
+	.webdoor_pager {
+		position: absolute;
+		right: 38px;
+		top: 0;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding-bottom: 75px;
+		.slick-dots {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			li {
+				width: 2px;
+				overflow: hidden;
+				height: 15%;
+				margin-top: 20px;
+				position: relative;
+				&:after {
+					content: '';
+					height: 0%;
+					width: 2px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					background: $color3;
+					transition: all ease-in 0.3s;
+				}
+				&.slick-active {
+					&:after {
+						height: 100%;
+						bottom: initial;
+						top: 0;
+					}
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			button {
+				background: #a9a9a9;
+				font-size: 0;
+				width: 2px;
+				border: 0;
+				display: block;
+				height: 100%;
+			}
+		}
+	}
+	.webdoor_mask{
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url('../images/home_full.png') no-repeat center;
+		background-size: cover;
+		@media screen and (max-width: 1440px){
+			width: 100vw;
+		}
+	}
+	.item {
+		height: 100vh;
+		img {
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+			height: 100vh;;
+		}
+	}
+	.wrapper {
+		position: relative;
+		background: $color1;		
+	}
+	.brand_layer {
+		position: absolute;
+		width: 100%;
+		overflow: hidden;
+		height: 100vh;
+		top: -60px;
+		img {
+			background: $color1;
+			transition: all 0.5s;
+			display: block;
+			width: 20%;
+			@include break-max(1440px) {
+				width: inherit;
+			}
+			&.active {
+				background: transparent;
+				opacity: 1;
+			}
+		}
+		.row {
+			display: flex;
+		}
+	}
+	.webdoor_footer {
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.arrow {
+			display: block;
+			position: absolute;
+			left: 50%;
+			margin-left: -20px;
+			top: 50%;
+			margin-top: -50px;
+			height: 40px;
+			width: 40px;
+			border: 1px solid $color4;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			img {
+				animation: arrowMov 0.7s infinite;
+			}
+			&:hover {
+				img {
+					transform: translateY(0%) !important;
+				}
+			}
+		}
+		.image_description {
+			font-weight: 100;
+			color: white;
+			margin-left: auto;
+			font-size: 20px;
+			&:before {
+				content: 'Destaque // ';
+				font-size: 20px;
+				font-weight: bold;
+				color: #bfa05e;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+@keyframes arrowMov {
+	from {
+		transform: translateY(-100%);
+	}
+	
+	to {
+		transform: translateY(150%);
+	}
+}

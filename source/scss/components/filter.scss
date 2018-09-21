@@ -1,0 +1,40 @@
+.filter {
+    .page_title {
+        margin: -50px 0 40px;
+        @include break-max(1200px) {
+            margin-top: 40px;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 25px;
+    }
+    .wrap {
+        display: table;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 20px;
+        li {
+            color: #838B95;
+            font-size: 14px;
+            transition: all 0.2s;
+            margin-left: 40px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                color: $color4;
+                font-weight: bold;                
+            }
+            &:hover {
+                color: $color4;
+            }
+        }
+    }
+}

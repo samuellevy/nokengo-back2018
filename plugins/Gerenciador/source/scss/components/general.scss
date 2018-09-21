@@ -1,0 +1,62 @@
+.form-group {
+  .form-box-img{
+    position: relative;
+    
+    .form-img {
+      width: 100%;
+      cursor: pointer;
+    }
+    .remove{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+
+.view-image{
+  width: 100%;
+  margin: 15px 0;
+}
+
+.btn-edit{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  a{
+    color: white !important;
+  }
+}
+
+.alpha-bg{
+  background-position: 0px 0px, 10px 10px;
+  background-size: 20px 20px;
+  background-image: linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);
+}
+
+.small{
+  height: 40px;
+}
+
+.works-media{
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  iframe{
+    margin: 10px;
+    width: 740px;
+    height: 420px;
+  }
+  img{
+    margin: 10px;
+    width: 740px;
+    height: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    iframe{
+      width: 100%;
+    }
+  }
+}

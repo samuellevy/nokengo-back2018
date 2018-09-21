@@ -1,0 +1,49 @@
+@mixin break-min($breakpoint) {
+	@media only screen and ( min-width: #{$breakpoint}){
+		@content;
+	}
+}
+@mixin break-max($breakpoint) {
+	@media only screen and ( max-width: #{$breakpoint}){
+		@content;
+	}
+}
+@mixin break-and($breakpoint-min,$breakpoint-max) {
+	@media only screen and ( min-width: #{$breakpoint-min} ) and ( max-width: #{$breakpoint-max}){
+		@content;
+	}
+}
+//after end before
+@mixin before-icon($width,$height) {
+	&:before {
+		content: "";
+		width: $width;
+		height: $height;
+		@content;
+	}
+}
+@mixin after-icon($width,$height) {
+	&:after {
+		content: "";
+		width: $width;
+		height: $height;
+		@content;
+	}
+}
+
+@mixin before-after($width,$height) {
+	&:before, &:after {
+		content: "";
+		width: $width;
+		height: $height;
+		@content;
+	}
+}
+@function vw($windowSize, $target) { 
+	$vw-context: ($windowSize*.01) * 1px;
+	@return ($target/$vw-context) * 1vw;
+  }
+
+@mixin get-vw($largura, $size) {
+	font-size: vw($largura, $size);
+  }
