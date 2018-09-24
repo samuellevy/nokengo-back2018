@@ -1,4 +1,4 @@
-<?php $site_name = "CCRJ | Gerenciador"; ?>
+<?php $site_name = "Nokengo.com | Gerenciador"; ?>
 <!DOCTYPE html>
 <html>
 <head>
