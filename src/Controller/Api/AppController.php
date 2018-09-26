@@ -4,6 +4,9 @@ namespace App\Controller\Api;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
 class AppController extends Controller
 {
     public function initialize()

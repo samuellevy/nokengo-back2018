@@ -22,7 +22,7 @@
         </div>
         <hr>
         <div class="text-center">
-          <?= $this->Form->button(__('Login'), ['class'=>'btn btn-simple btn-fill vertical-indent', 'style'=>'margin: 0px 0px 5px 0;']) ?>
+          <?= $this->Form->button(__('Login'), ['class'=>'btn btn-fill vertical-indent btn-cyan', 'style'=>'margin: 0px 0px 5px 0;']) ?>
         </div>
       </div>
     </div>

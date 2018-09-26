@@ -26,7 +26,11 @@ class PublicController extends AppController
             $data = $this->request->data();
             $messages = $this->Messages->patchEntity($messages, $data);
             $this->Messages->save($messages);
-            die(debug($data));
+            $this->set([
+                'success' => true,
+                '_serialize' => ['success']
+                ]
+            );
         }
     }
 }

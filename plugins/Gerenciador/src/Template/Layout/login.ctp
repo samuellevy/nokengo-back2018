@@ -1,4 +1,4 @@
-<?php $site_name = "Clube de Criação RJ | Gerenciador"; ?>
+<?php $site_name = "Nokengo Manager"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,7 @@
 <body>
   <div class="wrapper">
 
-        <div class="content">
+        <div class="content full-height">
           <?= $this->fetch('content') ?>
         </div>
 

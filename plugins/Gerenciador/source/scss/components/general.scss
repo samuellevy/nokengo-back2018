@@ -60,3 +60,16 @@
     }
   }
 }
+
+.full-height{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cyan{
+  background-color: #00b0e2 !important;
+  border: none !important;
+  text-transform: uppercase;
+  font-size: 10px;
+}
